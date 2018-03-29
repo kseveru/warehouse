@@ -6,6 +6,7 @@
   <title>Warehouse | Home</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-tablet.css">
+  <link rel="stylesheet" href="css/style-desktop.css">
   <link rel="preload" href="fonts/ptsans-400-normal.woff2" as="font">
   <link rel="preload" href="fonts/ptsansnarrow-400-normal.woff2" as="font">
 </head>
@@ -26,12 +27,12 @@
 <!-- ===== HEADER ======================== -->
 
   <header class="page-header">
-    <a class="logo logo--small">
-      <img class="logo__img" src="img/logo-small.png" width="48" height="48" alt="logo-small">
+    <a class="page-header__logo logo">
+      <img class="logo__img" src="img/logo-small.png" width="48" height="48" alt="logo">
     </a>
 
     <nav class="main-nav">
-      <ul class="site-nav">
+      <ul class="page-header__site-nav site-nav list-reset">
         <li class="site-nav__item">
           <a class="site-nav__link site-nav__link--home site-nav__link--active" title="Home">
             <span class="hidden">Home</span>
@@ -43,10 +44,10 @@
           </a>
         </li>
       </ul>
-      <div class="catalog-nav nojs">
-        <button class="catalog-nav__btn btn-reset" type="button"></button>
+      <div class="page-header__catalog-nav catalog-nav nojs">
+        <button class="catalog-nav__btn btn" type="button"></button>
         <h2 class="catalog-nav__title">Warehouse</h2>
-        <ul class="catalog-nav__list">
+        <ul class="catalog-nav__list list-reset">
           <li class="catalog-nav__item">
             <a class="catalog-nav__link catalog-nav__link--bowls" href="#">Bowls &amp; Pans</a>
           </li>
@@ -72,9 +73,9 @@
       </div>
     </nav>
 
-    <form class="search" action="https://echo.htmlacademy.ru" method="get">
+    <form class="page-header__search search" action="https://echo.htmlacademy.ru" method="get">
       <label class="search__label"><span class="hidden">Search</span>
-        <input class="search__input input-reset" type="text">
+        <input class="search__field input-text" type="text">
       </label>
       <button class="hidden" type="submit">Find</button>
     </form>
@@ -106,9 +107,9 @@
 
         <section class="slider__nav slider__nav--promo">
           <h4 class="hidden">the slide navigation</h4>
-          <ul class="slider__list">
+          <ul class="slider__list list-reset">
             <li class="slider__item">
-              <button class="slider__toggle slider__toggle--prev btn-reset" type="button">
+              <button class="slider__toggle slider__toggle--prev btn" type="button">
                 <span class="hidden">Previous</span>
                 <svg class="slider__arrow" width="7" height="14" role="presentation">
                   <use xlink:href="#icon-arrow"></use>
@@ -125,7 +126,7 @@
               <a class="slider__link"><span class="hidden">Set</span></a>
             </li>
             <li class="slider__item">
-              <button class="slider__toggle slider__toggle--next btn-reset" type="button">
+              <button class="slider__toggle slider__toggle--next btn" type="button">
                 <span class="hidden">Next</span>
                 <svg class="slider__arrow" width="7" height="14" role="presentation">
                   <use xlink:href="#icon-arrow"></use>
@@ -139,7 +140,7 @@
 
     <section class="catalog-section pots">
       <h2 class="catalog-section__title pots__title">
-        <a class="catalog-section__title-link" href="#">Seven pots <span class="catalog-section__title-small">collection</span></a>
+        <a class="catalog-section__title-link pots__title-link" href="#">Seven pots <span class="catalog-section__title-small">collection</span></a>
       </h2>
       <div class="slider">
         <article class="catalog-section__item product">
@@ -162,13 +163,13 @@
 
         <section class="slider__nav">
           <h4 class="hidden">the slide navigation</h4>
-          <button class="slider__toggle slider__toggle--prev btn-reset" type="button" disabled>
+          <button class="slider__toggle slider__toggle--prev btn" type="button" disabled>
             <span class="hidden">Previous</span>
             <svg class="slider__arrow" width="9" height="14" role="presentation">
               <use xlink:href="#icon-arrow"></use>
             </svg>
           </button>
-          <button class="slider__toggle slider__toggle--next btn-reset" type="button">
+          <button class="slider__toggle slider__toggle--next btn" type="button">
             <span class="hidden">Next</span>
             <svg class="slider__arrow" width="9" height="14" role="presentation">
               <use xlink:href="#icon-arrow"></use>
@@ -179,16 +180,20 @@
     </section>
 
     <section class="catalog-section rooms">
-      <h2 class="catalog-section__title rooms__title">
-        <svg class="rooms__title-img" width="32" height="26" role="presentation"><use xlink:href="#icon-diamond-title"></use></svg>
-        Rooms
+      <h2 class="rooms__title">
+        <a class="rooms__title-link" href="#">
+          <svg class="rooms__title-img" width="32" height="26" role="presentation">
+            <use xlink:href="#icon-diamond-title"></use>
+          </svg>
+          Rooms
+        </a>
       </h2>
       <img class="rooms__img" src="img/rooms-img.jpg" width="1499" height="330" alt="fragment of a beautiful white room">
     </section>
 
     <section class="catalog-section shakers">
       <h2 class="catalog-section__title shakers__title">
-        <a class="catalog-section__title-link" href="#">Shakers <span class="catalog-section__title-small shakers__title-small">collection</span></a>
+        <a class="catalog-section__title-link shakers__title-link" href="#">Shakers <span class="catalog-section__title-small shakers__title-small">collection</span></a>
       </h2>
       <article class="catalog-section__item product">
         <div class="product__col-1">
@@ -211,7 +216,7 @@
 
     <section class="catalog-section authentics">
       <h2 class="catalog-section__title authentics__title">
-        <a class="catalog-section__title-link" href="#">Authentics <span class="catalog-section__title-small authentics__title-small">collection</span></a>
+        <a class="catalog-section__title-link authentics__title-link" href="#">Authentics <span class="catalog-section__title-small authentics__title-small">collection</span></a>
       </h2>
       <article class="catalog-section__item product">
         <div class="product__col-1">
@@ -239,34 +244,36 @@
 <!-- ===== FOOTER ======================== -->
 
   <footer class="page-footer">
-    <ul class="popular">
-      <li class="popular__item">
-        <a class="popular__link popular__link--pots" href="#" title="Seven pots collection">
-          <span class="hidden">Seven pots collection</span>
-        </a>
-      </li>
-      <li class="popular__item">
-        <a class="popular__link popular__link--shakers" href="#" title="Shakers collection">
-          <span class="hidden">Shakers collection</span>
-        </a>
-      </li>
-      <li class="popular__item">
-        <a class="popular__link popular__link--authentics" href="#" title="Authentics collection">
-          <span class="hidden">Authentics collection</span>
-        </a>
-      </li>
-    </ul>
+    <div class="page-footer__col-1">
+      <ul class="popular list-reset">
+        <li class="popular__item">
+          <a class="popular__link popular__link--pots" href="#" title="Seven pots collection">
+            <span class="hidden">Seven pots collection</span>
+          </a>
+        </li>
+        <li class="popular__item">
+          <a class="popular__link popular__link--shakers" href="#" title="Shakers collection">
+            <span class="hidden">Shakers collection</span>
+          </a>
+        </li>
+        <li class="popular__item">
+          <a class="popular__link popular__link--authentics" href="#" title="Authentics collection">
+            <span class="hidden">Authentics collection</span>
+          </a>
+        </li>
+      </ul>
 
-    <p class="copyright">
-      2014 <span class="copyright__name">Ware house</span>, USA based company. Image right belong to their respective owners.
-    </p>
+      <p class="page-footer__copyright">
+        2014 <span class="page-footer__copyright-name">Ware house</span>, USA based company. Image right belong to their respective owners.
+      </p>
+    </div>
 
-    <p class="page-footer__logo">
+    <div class="page-footer__col-2">
       <a href="#" class="logo">
         <img class="logo__img" src="img/logo-full.jpg" width="210" height="100" alt="logo">
         <span class="logo__name">warehouse</span>
       </a>
-    </p>
+    </div>
   </footer>
 
 </body>

@@ -11,6 +11,9 @@
   <link rel="preload" href="fonts/ptsansnarrow-400-normal.woff2" as="font">
 </head>
 <body>
+
+<!-- ===== SVG SPRITE ==================== -->
+
   <svg style="display: none;">
     <symbol viewBox="0 0 7 14" id="icon-arrow">
       <polyline points="7,0 0,7 7,14" stroke-width="2" fill="none"/>
@@ -24,73 +27,68 @@
   </svg>
 
 
-<!-- ===== HEADER ======================== -->
+  <!-- ===== HEADER ======================== -->
 
   <header class="page-header">
-    <a class="page-header__logo logo">
-      <img class="logo__img" src="img/logo-small.png" width="48" height="48" alt="logo">
-    </a>
 
-    <nav class="main-nav">
-      <ul class="page-header__site-nav site-nav list-reset">
-        <li class="site-nav__item">
-          <a class="site-nav__link site-nav__link--home site-nav__link--active" title="Home">
-            <span class="hidden">Home</span>
-          </a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link site-nav__link--diamond" href="#" title="Diamond">
-            <span class="hidden">Diamond</span>
-          </a>
-        </li>
-      </ul>
-      <div class="page-header__catalog-nav catalog-nav nojs">
-        <button class="catalog-nav__btn btn" type="button"></button>
-        <h2 class="catalog-nav__title">Warehouse</h2>
-        <ul class="catalog-nav__list list-reset">
-          <li class="catalog-nav__item">
-            <a class="catalog-nav__link catalog-nav__link--bowls" href="#">Bowls &amp; Pans</a>
+
+      <a class="page-header__logo logo">
+        <img class="logo__img" src="img/logo-small.png" width="48" height="48" alt="logo">
+      </a>
+
+      <nav class="main-nav">
+        <ul class="page-header__site-nav site-nav list-reset">
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--home site-nav__link--active" title="Home">
+              <span class="hidden">Home</span>
+            </a>
           </li>
-          <li class="catalog-nav__item">
-            <a class="catalog-nav__link catalog-nav__link--cups" href="#">Cups</a>
-          </li>
-          <li class="catalog-nav__item">
-            <a class="catalog-nav__link catalog-nav__link--dispensers" href="#">Dispensers</a>
-          </li>
-          <li class="catalog-nav__item">
-            <a class="catalog-nav__link catalog-nav__link--furniture" href="#">Furniture</a>
-          </li>
-          <li class="catalog-nav__item">
-            <a class="catalog-nav__link catalog-nav__link--tableware" href="#">Tableware</a>
-          </li>
-          <li class="catalog-nav__item">
-            <a class="catalog-nav__link catalog-nav__link--cutlery" href="#">Cutlery</a>
-          </li>
-          <li class="catalog-nav__item">
-            <a class="catalog-nav__link catalog-nav__link--plants" href="#">Plants &amp; Deco</a>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--diamond" href="#" title="Diamond">
+              <span class="hidden">Diamond</span>
+            </a>
           </li>
         </ul>
-      </div>
-    </nav>
+        <div class="page-header__catalog-nav catalog-nav nojs">
+          <button class="catalog-nav__btn btn" type="button"></button>
+          <h2 class="catalog-nav__title">Warehouse</h2>
+          <ul class="catalog-nav__list list-reset">
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--bowls" href="#">Bowls &amp; Pans</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--cups" href="#">Cups</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--dispensers" href="#">Dispensers</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--furniture" href="#">Furniture</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--tableware" href="#">Tableware</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--cutlery" href="#">Cutlery</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--plants" href="#">Plants &amp; Deco</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <form class="page-header__search search" action="https://echo.htmlacademy.ru" method="get">
-      <label class="search__label"><span class="hidden">Search</span>
-        <input class="search__field input-text" type="text">
-      </label>
-      <button class="hidden" type="submit">Find</button>
-    </form>
-  </header>
+      <form class="page-header__search search" action="https://echo.htmlacademy.ru" method="get">
+        <label class="search__label"><span class="hidden">Search</span>
+          <input class="search__field input-text" type="text">
+        </label>
+        <button class="hidden" type="submit">Find</button>
+      </form>
 
-
-<!-- ===== CONTENT ======================= -->
-
-  <main class="page-main">
-    <h1 class="hidden">Warehouse | Home</h1>
-
-    <section class="catalog-section promo">
+    <section class="promo">
       <h2 class="hidden">Promo-slider</h2>
-      <div class="slider">
-        <article class="catalog-section__item product">
+      <div class="promo__slider slider">
+        <article class="product">
           <div class="product__col-1">
             <h3 class="product__title">Cork salt &amp; pepper</h3>
             <span class="product__price">45.50&nbsp;$</span>
@@ -101,42 +99,45 @@
               <img class="product__author-img" src="img/cork-author.png" alt="author: Materia &amp; Nendo">
               <span class="product__author-name">By Materia &amp; Nendo</span>
             </p>
-            <p class="product__slogan">Good Things come in Paris</p>
+            <p class="product__slogan">Good<br>Things come in&nbsp;Paris</p>
           </div>
         </article>
-
-        <section class="slider__nav slider__nav--promo">
+        <section class="slider__nav">
           <h4 class="hidden">the slide navigation</h4>
+          <button class="slider__toggle slider__toggle--prev btn" type="button">
+            <span class="hidden">Previous</span>
+            <svg class="slider__arrow" width="7" height="14" role="presentation">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </button>
           <ul class="slider__list list-reset">
             <li class="slider__item">
-              <button class="slider__toggle slider__toggle--prev btn" type="button">
-                <span class="hidden">Previous</span>
-                <svg class="slider__arrow" width="7" height="14" role="presentation">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </button>
-            </li>
-            <li class="slider__item slider__item--salt">
-              <a class="slider__link" href="#"><span class="hidden">Salt</span></a>
-            </li>
-            <li class="slider__item slider__item--pepper">
-              <a class="slider__link" href="#"><span class="hidden">Pepper</span></a>
-            </li>
-            <li class="slider__item slider__item--set slider__item--active">
-              <a class="slider__link"><span class="hidden">Set</span></a>
+              <a class="slider__link slider__link--salt" href="#"><span class="hidden">Salt</span></a>
             </li>
             <li class="slider__item">
-              <button class="slider__toggle slider__toggle--next btn" type="button">
-                <span class="hidden">Next</span>
-                <svg class="slider__arrow" width="7" height="14" role="presentation">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </button>
+              <a class="slider__link slider__link--pepper" href="#"><span class="hidden">Pepper</span></a>
+            </li>
+            <li class="slider__item slider__item--active">
+              <a class="slider__link slider__link--set"><span class="hidden">Set</span></a>
             </li>
           </ul>
+          <button class="slider__toggle slider__toggle--next btn" type="button">
+            <span class="hidden">Next</span>
+            <svg class="slider__arrow" width="7" height="14" role="presentation">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </button>
         </section>
       </div>
     </section>
+
+  </header>
+
+
+<!-- ===== CONTENT ======================= -->
+
+  <main class="page-main">
+    <h1 class="hidden">Warehouse | Home</h1>
 
     <section class="catalog-section pots">
       <h2 class="catalog-section__title pots__title">
@@ -233,7 +234,7 @@
             <img class="product__author-img" src="img/bowl-author.png" width="63" height="63" alt="author: Karina Kapoor">
             <span class="product__author-name">By Karina Kapoor</span>
           </p>
-          <p class="product__slogan">Back to basics</p>
+          <p class="product__slogan">Back to&nbsp;basics</p>
         </div>
       </article>
     </section>

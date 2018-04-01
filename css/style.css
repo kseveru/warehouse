@@ -156,7 +156,6 @@ img {
 }
 
 .page-header__logo {
-  float: left;
 }
 
 .logo {
@@ -363,10 +362,6 @@ img {
   background-color: #f5f5f5;
 }
 
-.promo {
-  background-color: #e9eae2;
-}
-
 .rooms {
   position: relative;
 }
@@ -510,14 +505,11 @@ img {
   color: #ae883b;
 }
 
-.catalog-section__item {
-  height: 100%;
-}
-
 /* product
 ============================== */
 
 .product {
+  height: 100%;
   padding: var(--wrap-padding);
 }
 
@@ -600,35 +592,44 @@ img {
 /* Slider
 ================================================== */
 
+.promo {
+  background-color: #e9eae2;
+}
+
+.promo__slider {
+  flex-grow: 1;
+}
+
+.promo__item {
+}
+
 .slider {
   position: relative;
+}
+
+.promo .slider__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+
+  background-color: #f9c34a;
 }
 
 .slider__list {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
-
-  background-color: #f9c34a;
-}
-
-.slider__item {
-  position: relative;
-
-  width: 50px;
-  height: 52px;
-}
-
-.slider__item--salt,
-.slider__item--pepper,
-.slider__item--set {
-  background: url("../img/icon/icon-promo-set.png") 50% 0 no-repeat;
 }
 
 .slider__link {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 52px;
+  height: 52px;
+}
+
+.slider__link--salt,
+.slider__link--pepper,
+.slider__link--set {
+  background: url("../img/icon/icon-promo-set.png") 50% 0 no-repeat;
 }
 
 .slider__toggle {
@@ -638,13 +639,7 @@ img {
 
   width: 52px;
   height: 52px;
-  padding-left: 10px;
-
-  text-align: left;
-}
-
-.slider__nav--promo .slider__toggle {
-  top: 0;
+  padding-left: 15px;
 }
 
 .slider__toggle--next {
@@ -654,12 +649,30 @@ img {
   transform: rotate(180deg);
 }
 
+.promo .slider__toggle {
+  position: static;
+}
+
 .slider__arrow {
+  display: block;
+
   stroke: #c5c5c5;
 }
 
-.slider__nav--promo .slider__arrow {
+.promo .slider__arrow {
   stroke: #c19226;
+}
+
+.slider__toggle:hover .slider__arrow,
+.slider__toggle:focus .slider__arrow {
+  stroke: #3f3f3e;
+}
+
+.slider__toggle:disabled:hover .slider__arrow,
+.slider__toggle:disabled:focus .slider__arrow {
+  stroke: currentColor;
+
+  opacity: inherit;
 }
 
 

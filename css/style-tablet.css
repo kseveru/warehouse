@@ -50,7 +50,6 @@ margin: 40px 0 15px;
   .product__img {
 max-width: 100%;
 margin-top: auto;
-margin-left: auto;
 margin-bottom: calc(var(--wrap-padding) * -1);
   }
 

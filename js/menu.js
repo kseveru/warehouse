@@ -1,0 +1,1 @@
+var navToggle=document.querySelector(".catalog-nav__btn"),navCatalog=document.querySelector(".catalog-nav");navCatalog.classList.remove("nojs"),navToggle.addEventListener("click",function(a){a.preventDefault(),navCatalog.classList.toggle("catalog-nav--open")});

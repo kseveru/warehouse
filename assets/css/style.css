@@ -336,18 +336,23 @@ img {
 .catalog-nav__link--cups {
   background-image: url("../img/icon/icon-cups.png");
 }
+
 .catalog-nav__link--dispensers {
   background-image: url("../img/icon/icon-dispensers.png");
 }
+
 .catalog-nav__link--furniture {
   background-image: url("../img/icon/icon-furniture.png");
 }
+
 .catalog-nav__link--tableware {
   background-image: url("../img/icon/icon-tableware.png");
 }
+
 .catalog-nav__link--cutlery {
   background-image: url("../img/icon/icon-cutlery.png");
 }
+
 .catalog-nav__link--plants {
   background-image: url("../img/icon/icon-plants.png");
 }
@@ -380,8 +385,6 @@ img {
 
 .slider {
   position: relative;
-
-  height: 100%;
 }
 
 .slider--full .slider__nav {
@@ -622,7 +625,7 @@ img {
 ============================== */
 
 .product {
-  height: 100%;
+  min-height: 100%;
   padding: var(--wrap-padding);
 }
 

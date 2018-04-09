@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
 
   /* VARIABLES
   ====================================================================== */
@@ -99,6 +99,7 @@
 
   .page-header__col-3 {
     flex-grow: 1;
+    display: flex;
   }
 
   .slider--full .slider__nav {

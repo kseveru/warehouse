@@ -193,17 +193,13 @@ img {
 }
 
 .site-nav__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70px;
   height: 48px;
 
   text-decoration: none;
-
-  background: url("../img/icon/icon-home.png") /*16px 18px*/ 50% 50% no-repeat;
-}
-
-.site-nav__link--diamond {
-  background-image: url("../img/icon/icon-diamond.png");
 }
 
 .site-nav__link--active,
@@ -385,6 +381,8 @@ img {
 
 .slider {
   position: relative;
+
+  flex-grow: 1;
 }
 
 .slider--full .slider__nav {

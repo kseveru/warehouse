@@ -3,4 +3,4 @@
 
 https://kseveru.github.io/warehouse/
 
-Макет: warehouse
+Макет: Cosmin Capitanu (https://dribbble.com/Radium)

@@ -1,6 +1,17 @@
-# warehouse
-Резиновая вёрстка (1 страница)
+# Warehouse #
 
-https://kseveru.github.io/warehouse/
+[kseveru.github.io/warehouse](https://kseveru.github.io/warehouse/ "Открыть проект")
 
-Макет: Cosmin Capitanu (https://dribbble.com/Radium)
+**Верстка**: статичная
+**Страниц**: landing page
+**Макет**: [Cosmin Capitanu](https://dribbble.com/Radium)
+
+<table>
+  <tr>
+    <td>
+      <a href="https://kseveru.github.io/img/preview-warehouse.png" title="Открыть макет">
+        <img src="https://kseveru.github.io/img/preview-warehouse-small.png">
+      </a>
+    </td>
+  </tr>
+</table>

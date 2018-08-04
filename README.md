@@ -2,8 +2,8 @@
 
 [kseveru.github.io/warehouse](https://kseveru.github.io/warehouse/ "Открыть проект")
 
-**Верстка**: статичная
-**Страниц**: landing page
+**Верстка**: статичная  
+**Страниц**: landing page  
 **Макет**: [Cosmin Capitanu](https://dribbble.com/Radium)
 
 <table>
